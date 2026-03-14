@@ -1,0 +1,45 @@
+project_root/
+│
+├── data/
+│   ├── raw/
+│   └── processed/
+│
+├── embeddings/
+│   ├── image_embeddings/
+|   └── text_embeddings/
+│
+├── ingestion/
+|   ├── __init__.py
+│   ├── pdf_loader.py              
+│   ├── structured_text_cleaner.py
+|   ├── image_preprocessor.py
+|   ├── chunker.py
+│   ├── text_embedder.py                
+│   ├── image_embedder.py                
+│   └── index_builder.py                 
+│
+├── retrieval/
+|   ├── __init__.py
+│   ├── classifier.py
+|   ├── query_enhancer.py
+|   ├── image_interpreter.py
+|   ├── taxonomy_router.py               
+│   ├── reranker.py         
+│   ├── vector_search.py       
+│   ├── hybrid_search.py
+│   ├── web_agent.py
+│   ├── answer_generator.py
+|   └── orchestrator.py                     
+│
+├── app/
+│   └── app.py
+│
+├── lancedb_store/
+│
+├── .env
+├── .gitignore
+├── project_structure.txt
+├── requirements.txt
+├── test.jpg
+└── README.md
+
