@@ -31,24 +31,24 @@ The system aims to encourage **responsible interpretation of body language**, em
 ```mermaid
 flowchart TD
 
-A[User Query] --> B[Query Classifier]
+A["User Query"] --> B["Query Classifier"]
 
-B -->|Irrelevant| C[Reject / Inform User]
-B -->|Book-based Query| D[Primary Knowledge Source]
-B -->|Web-based Query| I[Web Search (Tavily)]
+B -->|"Irrelevant"| C["Reject / Inform User"]
+B -->|"Book-based Query"| D["Primary Knowledge Source"]
+B -->|"Web-based Query"| I["Web Search (Tavily)"]
 
-D --> F[Vector Database Search (LanceDB)]
-F --> G[BM25 Retrieval (rank_bm25)]
-G --> H[Reranking (cross-encoder/ms-marco-MiniLM-L-6-v2)]
+D --> F["Vector Database Search (LanceDB)"]
+F --> G["BM25 Retrieval (rank_bm25)"]
+G --> H["Reranking (cross-encoder/ms-marco-MiniLM-L-6-v2)"]
 
-H --> M{Retrieval / Answerability Confidence}
-M -->|High| K[Large Language Model (LLM) - Gemini 2.5 Flash Lite]
-M -->|Low| I
+H --> M["Retrieval / Answerability Confidence"]
+M -->|"High"| K["Large Language Model (LLM) - Gemini 2.5 Flash Lite"]
+M -->|"Low"| I
 
-I --> N[Large Language Model (LLM) - Gemini 2.5 Flash Lite]
+I --> N["Large Language Model (LLM) - Gemini 2.5 Flash Lite"]
 
-K --> O[Book Answer]
-N --> P[Web Answer]
+K --> O["Book Answer"]
+N --> P["Web Answer"]
 ```
 
 
