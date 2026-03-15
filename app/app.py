@@ -59,8 +59,8 @@ defaults = {
     "is_processing": False,
     "pending_query": None,
     "pending_image_path": None,
-    "openrouter_key": os.environ.get("OPENROUTER_API_KEY", ""),
-    "tavily_key": os.environ.get("TAVILY_API_KEY", ""),
+    "openrouter_key": "",
+    "tavily_key": "",
     "uploader_version": 0,
     "uploader_key": "main_uploader_0",
 }
