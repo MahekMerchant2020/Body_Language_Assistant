@@ -275,7 +275,7 @@ The assistant will launch in your browser.
 
 # Deployment (Streamlit Community Cloud)
 
-Streamlit Live Application: [https://bodylanguageassistant-nzdczbkfqsp6ezdfzpgycf.streamlit.app/](https://bodylanguageassistant-nzdczbkfqsp6ezdfzpgycf.streamlit.app/)
+Streamlit Live Application: [https://bodylanguageassistant-be8ifmzbu6kwnzxtazb64z.streamlit.app/](https://bodylanguageassistant-be8ifmzbu6kwnzxtazb64z.streamlit.app/)
 
 To deploy:
 
