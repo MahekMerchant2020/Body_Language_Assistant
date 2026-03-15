@@ -153,7 +153,7 @@ The Body Language Assistant can be used in:
 
 ---
 
-# What This System DOES NOT Do
+# What This System DOES NOT DO
 
 The Body Language Assistant **does not**:
 
@@ -275,6 +275,8 @@ The assistant will launch in your browser.
 
 # Deployment (Streamlit Community Cloud)
 
+Streamlit Live Application: [https://bodylanguageassistant-nzdczbkfqsp6ezdfzpgycf.streamlit.app/](https://bodylanguageassistant-nzdczbkfqsp6ezdfzpgycf.streamlit.app/)
+
 To deploy:
 
 1. Push the repository to GitHub
@@ -292,8 +294,8 @@ app/app.py
 5. Add environment variables in Streamlit Cloud settings:
 
 ```
-OPENROUTER_API_KEY
-TAVILY_API_KEY
+OPENROUTER_API_KEY = "your_openrouter_api_key"
+TAVILY_API_KEY = "your_tavily_api_key"
 ```
 
 ---
